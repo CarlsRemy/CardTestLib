@@ -1,0 +1,35 @@
+{
+  "name": "cardtestlib",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/cardtestlib.min.js",
+  "scripts": {
+    "build": "terser src/cardtestlib.js --compress --mangle --output dist/cardtestlib.min.js",
+    "test": "mocha test/*",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlsRemy/CardTestLib.git"
+  },
+  "keywords": [
+    "creditcard",
+    "CardTestLib",
+    "TestLib",
+    "Tarjeta de crédito",
+    "creditcardGenerator",
+    "Generators",
+    "Republica Dominicana"
+  ],
+  "author": "Carlos I. Ynfante R.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlsRemy/CardTestLib/issues"
+  },
+  "homepage": "https://github.com/CarlsRemy/CardTestLib#readme",
+  "devDependencies": {
+    "chai": "4.3.8",
+    "mocha": "^10.4.0",
+    "terser": "^5.31.0"
+  }
+}
